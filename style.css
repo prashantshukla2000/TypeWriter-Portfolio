@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    padding: 16px;
+}
+
+/* Hwre we target inside the container class the immediate div element inside of it the first/immdiate h2 tag that has the title  */
+.container >div > h2{    
+text-align: center;
+}
+.intro{
+    margin :-16px;
+    padding: 16px;
+    background-color: #1d1c1c;
+    color: white;
+    text-align: center;
+}
+
+#profile-img {
+    border-radius: 50%;
+    height:300px;
+    width:300px;
+} 
+.social-links img{
+    height: 30px;
+    width: 30px;
+}
+
+.social-links a{
+text-decoration: nones;
+margin: auto 8px;
+}
+
+#about-me,#technologies {
+    margin: 3rem auto;
+}
+
+#qualification,#hobbies{
+    background-color: #1d1c1c;
+    color: white;
+    margin: -16px;
+    padding: 1rem;
+    
+}
+
+
+
+table ,
+tr,
+td
+,th{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+th,td{
+    padding :8px
+}
+table{
+    width: 100%;
+}
+p{
+ font-size: 1.5rem;
+ line-height: 1.5rem;
+}
+
+/* Style for typewriter effect */
+.dynamic-text-color{
+    color: blue;;
+}
