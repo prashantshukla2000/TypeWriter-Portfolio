@@ -1,13 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+header{
+    padding:16px;
+    position: sticky;
+    top: 0;
+    border: 1px solid white;
+    background-color: hsl(0, 0%, 80%);
+    border-bottom: 4px solid;
+ }
+
+header nav >a{     /*  //Apllies to all the anchor tags in the nav */
+    margin: 16px;
+    text-decoration: none;
+    color: inherit;
+ }
+
+ footer{
+    text-align: center;
+    padding: 1rem;
+    border-top: 4px solid;
+}
+
 .container{
     padding: 16px;
 }
 
-/* Hwre we target inside the container class the immediate div element inside of it the first/immdiate h2 tag that has the title  */
-.container >div > h2{    
+/* Hwre we target inside the container class the immediate section element inside of it the first/immdiate h2 tag that has the title  */
+.container >section > h2{    
 text-align: center;
 }
 .intro{
@@ -69,3 +99,27 @@ p{
 .dynamic-text-color{
     color: blue;;
 }
+
+form#contact{
+    max-width:400px ;
+    margin: auto;
+    padding: 16px;
+    border: 1px solid;
+    border-radius:16px; ;
+}
+
+#contact label{
+    display: block;
+    font-weight: 600;
+}
+
+#contact input, #contact textarea,#contact button{
+    width:100% ;
+    font-size: 1.2rem;
+    padding:8px;
+}
+
+#contact-me{
+    margin-top: 16px;
+}
+
